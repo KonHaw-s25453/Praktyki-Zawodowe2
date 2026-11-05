@@ -1,0 +1,31 @@
+erDiagram
+    USERS ||--o{ USER_ROLES : has
+    ROLES ||--o{ USER_ROLES : assigned
+
+    USERS ||--o| EMPLOYEES : represents
+
+    EMPLOYEES ||--o{ EMPLOYEE_ASSIGNMENTS : has
+    DEPARTMENTS ||--o{ EMPLOYEE_ASSIGNMENTS : contains
+
+    EMPLOYEES ||--o{ APPLICATIONS : submits
+    BENEFIT_TYPES ||--o{ APPLICATIONS : categorizes
+    BENEFIT_PERIODS ||--o{ APPLICATIONS : concerns
+
+    APPLICATION_STATUSES ||--o{ APPLICATIONS : defines
+
+    APPLICATIONS ||--o{ APPLICATION_HISTORY : tracks
+    APPLICATIONS ||--o{ APPLICATION_DOCUMENTS : requires
+
+    DOCUMENT_TYPES ||--o{ APPLICATION_DOCUMENTS : describes
+
+    BENEFIT_TYPES ||--o{ BENEFIT_REQUIRED_DOCUMENTS : requires
+    DOCUMENT_TYPES ||--o{ BENEFIT_REQUIRED_DOCUMENTS : defines
+
+    BENEFIT_TYPES ||--o{ BENEFIT_PERIODS : has
+    BENEFIT_TYPES ||--o{ ELIGIBILITY_RULES : defines
+
+    EMPLOYEES ||--o{ EMPLOYEE_CHILDREN : linked
+    CHILDREN ||--o{ EMPLOYEE_CHILDREN : linked
+
+    APPLICATIONS ||--o{ APPLICATION_REVIEWS : reviewed
+    APPLICATIONS ||--o{ DECISIONS : receives
