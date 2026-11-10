@@ -1,0 +1,20 @@
+{
+  "name": "praktyki-zawodowe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonHaw-s25453/Praktyki-Zawodowe2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KonHaw-s25453/Praktyki-Zawodowe2/issues"
+  },
+  "homepage": "https://github.com/KonHaw-s25453/Praktyki-Zawodowe2#readme"
+}
