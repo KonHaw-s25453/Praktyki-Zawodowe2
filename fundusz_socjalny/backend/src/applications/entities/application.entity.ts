@@ -10,8 +10,8 @@ import {
   Check,
 } from 'typeorm';
 
-import { Employee } from '../employees/employee.entity.js';
-import { BenefitPeriod } from '../benefit_period/benefit-period.entity.js';
+import { Employee } from '../../employees/employee.entity.js';
+import { BenefitPeriod } from '../../benefits/entities/benefit_period.entity.js';
 
 @Entity('applications')
 @Index('idx_applications_employee', ['employeeId'])

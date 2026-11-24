@@ -9,8 +9,8 @@ import {
   Check
 } from 'typeorm';
 
-import { BenefitType } from '../benefit-type/benefit-type.entity.js';
-import { DocumentType } from '../document_types/document_type.entity.js';
+import { BenefitType } from './benefit-type.entity.js';
+import { DocumentType } from '../../documents/entities/document_type.entity.js';
 
 @Entity('benefit_required_documents')
 @Index(

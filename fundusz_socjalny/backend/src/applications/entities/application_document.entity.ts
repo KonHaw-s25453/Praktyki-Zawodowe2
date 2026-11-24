@@ -10,9 +10,9 @@ import {
   Check,
 } from 'typeorm';
 
-import { Application } from '../applications/application.entity.js';
-import { BenefitRequiredDocument } from '../benefit_required_documents/benefit_required_document.entity.js';
-import { User } from '../users/user.entity.js';
+import { Application } from './application.entity.js';
+import { BenefitRequiredDocument } from '../../benefits/entities/benefit_required_document.entity.js';
+import { User } from '../../users/entities/user.entity.js';
 
 @Entity('application_documents')
 

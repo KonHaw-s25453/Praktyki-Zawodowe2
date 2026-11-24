@@ -10,7 +10,7 @@ import {
   JoinColumn,
 } from 'typeorm';
 
-import { BenefitType } from '../benefit-type/benefit-type.entity.js';
+import { BenefitType } from './benefit-type.entity.js';
 
 @Entity('benefit_periods')
 

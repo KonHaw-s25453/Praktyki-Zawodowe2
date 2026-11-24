@@ -9,8 +9,8 @@ import {
   Check,
 } from 'typeorm';
 
-import { BenefitType } from '../benefit-type/benefit-type.entity.js';
-import { User } from '../users/user.entity.js';
+import { BenefitType } from './benefit-type.entity.js';
+import { User } from '../../users/entities/user.entity.js';
 
 @Entity('benefit_form_versions')
 @Index(

@@ -9,8 +9,8 @@ import {
   Check,
 } from 'typeorm';
 
-import { Application } from '../applications/application.entity.js';
-import { User } from '../users/user.entity.js';
+import { Application } from './application.entity.js';
+import { User } from '../../users/entities/user.entity.js';
 
 @Entity('application_status_history')
 @Index('idx_application_history_application', ['applicationId', 'changedAt'])

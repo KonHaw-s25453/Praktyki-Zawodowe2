@@ -9,9 +9,9 @@ import {
   Check,
 } from 'typeorm';
 
-import { Application } from '../applications/application.entity.js';
-import { BenefitFormVersion } from '../benefit_form_versions/benefit_form_version.entity.js';
-import { User } from '../users/user.entity.js';
+import { Application } from './application.entity.js';
+import { BenefitFormVersion } from '../../benefits/entities/benefit_form_version.entity.js';
+import { User } from '../../users/entities/user.entity.js';
 
 @Entity('application_versions')
 @Index(
@@ -29,6 +29,15 @@ import { User } from '../users/user.entity.js';
 @Check('chk_application_form_json', 'JSON_VALID(`form_data`)')
 
 export class ApplicationVersion {
+
+@PrimaryGeneratedColumn({
+  name: 'application_version_id',
+  type: 'bigint',
+  unsigned: true,
+})
+applicationVersionId: string;
+
+
 @Column({ name: 'application_id', type: 'bigint', unsigned: true })
 applicationId: string;
 
